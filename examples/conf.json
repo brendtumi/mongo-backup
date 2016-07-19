@@ -1,0 +1,99 @@
+[
+  {
+    "from": {
+      "type": "mongodb",
+      "host": "127.0.0.1",
+      "port": 27017,
+      "authenticationDatabase": "admin",
+      "database": "backup-test",
+      "username": "backup-test-user",
+      "password": "backup-test-password",
+      "archive": "gzip"
+    },
+    "to": {
+      "type": "s3",
+      "accessKeyId": "XXXXJEHXOE576BB4XXXX",
+      "secretAccessKey": "XXXX5n4a6Us2x9z6kCGZ0GH7pvzZTDM0KdwjXXXX",
+      "region": "eu-central-1",
+      "bucket": "backups",
+      "folder": ""
+    },
+    "hooks": {
+      "before": [
+        {
+          "type": "nodejs",
+          "file": "/var/www/example/database-locker.js"
+        },
+        {
+          "type": "nodemailer",
+          "smtp": {
+            "host": "smtp.office365.com",
+            "port": 587,
+            "secure": false,
+            "auth": {
+              "user": "xxx@xxx.com",
+              "pass": "xxx"
+            }
+          },
+          "options": {
+            "from": "'Fred Foo' <foo@blurdybloop.com>",
+            "to": "bar@blurdybloop.com, baz@blurdybloop.com",
+            "subject": "Backup starting",
+            "text": "Result is %s",
+            "html": "<p>Result is <b>%s</b></p>"
+          }
+        }
+      ],
+      "done": [
+        {
+          "type": "nodemailer",
+          "smtp": {
+            "host": "smtp.office365.com",
+            "port": 587,
+            "secure": false,
+            "auth": {
+              "user": "xxx@xxx.com",
+              "pass": "xxx"
+            }
+          },
+          "options": {
+            "from": "'Fred Foo' <foo@blurdybloop.com>",
+            "to": "bar@blurdybloop.com, baz@blurdybloop.com",
+            "subject": "Backup done",
+            "text": "Result is %s",
+            "html": "<p>Result is <b>%s</b></p>"
+          }
+        },
+        {
+          "type": "request",
+          "url": "http://www.tumayceber.com/backup/ok?db=backup-test"
+        }
+      ],
+      "fail": [
+        {
+          "type": "nodemailer",
+          "smtp": {
+            "host": "smtp.office365.com",
+            "port": 587,
+            "secure": false,
+            "auth": {
+              "user": "xxx@xxx.com",
+              "pass": "xxx"
+            }
+          },
+          "options": {
+            "from": "'Fred Foo' <foo@blurdybloop.com>",
+            "to": "bar@blurdybloop.com, baz@blurdybloop.com",
+            "subject": "Backup failed",
+            "text": "Result is %s",
+            "html": "<p>Result is <b>%s</b></p>"
+          }
+        },
+        {
+          "type": "request",
+          "url": "http://www.tumayceber.com/backup/fail?db=backup-test"
+        }
+      ]
+    }
+  }
+]

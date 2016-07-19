@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+var updateNotifier = require('update-notifier');
+var mbk = require('../lib');
+var pkg = require('../package.json');
+
+updateNotifier({pkg: pkg}).notify();
+
+program
+	.version(pkg.version)
+	//.usage('[command] [options]')
+	.description("Backup your mongoDB to S3 or file System with 'backup' command. For example configuration file use 'example'.");
+
+program
+	.command('example <path>')
+	.description('Create an example configuration file on <path>')
+	.action(mbk.example);
+
+program
+	.command('backup <config>')
+	.description('Run backup from config file')
+	.option('-c, --cron <mode>', "Use cron timer [--cron='* * * * * *']")
+	.action(mbk.run);
+
+program.parse(process.argv);
