@@ -17,9 +17,11 @@
     "url": "git+https://github.com/brendtumi/mongo-backup.git"
   },
   "keywords": [
+    "mongodb",
     "mongo",
     "backup",
     "s3",
+    "mongo s3 backup",
     "email notification",
     "http notification",
     "aws"
