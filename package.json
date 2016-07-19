@@ -1,5 +1,5 @@
 {
-  "name": "mongo-backup",
+  "name": "mongodbbackup",
   "version": "1.0.0",
   "description": "Cli for Automated MongoDB backup",
   "author": "Tumay Ceber <tumayceber@gmail.com>",
@@ -20,6 +20,8 @@
     "mongo",
     "backup",
     "s3",
+    "email notification",
+    "http notification",
     "aws"
   ],
   "preferGlobal": true,
