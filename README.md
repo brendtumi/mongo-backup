@@ -73,4 +73,4 @@ mbk backup <path to conf.json> --cron='* * * * * *'
 [downloads-image]: http://img.shields.io/npm/dm/mongodbbackup.svg
 [npm-image]: https://img.shields.io/npm/v/mongodbbackup.svg
 [dependency-url]: https://david-dm.org/brendtumi/mongo-backup
-[npm-url]: https://npmjs.org/package/mongo-backup
+[npm-url]: https://npmjs.org/package/mongodbbackup
