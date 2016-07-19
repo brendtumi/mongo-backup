@@ -18,11 +18,11 @@ mbk example <path for conf.json>
 Use any command in [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) with same name (without '--')
 
 **`archive` options** 
-* gzip
+* `gzip`
 *this will automagically add --gzip and --archive arguments for compressing backup file*
-* tar (default)
+* `tar` (default)
 *will use `tar -zcvf` command to compress backup files*
-* zip
+* `zip`
 *will use `zip -zcvf` command to compress backup files but `sudo apt-get install zip` should be installed* 
 
 **email notification** 
