@@ -69,6 +69,18 @@ mbk backup <path to conf.json>
 mbk backup <path to conf.json> --cron='* * * * * *'
 ```
 
+#### Contribution
+This is a fairly new tool, so any contribution are welcomed.
+What should we focus?
+* FTP/SFTP support
+* Testing
+* Amazon EFS
+* Dropbox like support
+
+
+#### My boss wants a license. So where is it?
+[MIT License](./LICENSE)
+
 [dependency-image]: https://david-dm.org/brendtumi/mongo-backup.svg
 [downloads-image]: http://img.shields.io/npm/dm/mongodbbackup.svg
 [npm-image]: https://img.shields.io/npm/v/mongodbbackup.svg
