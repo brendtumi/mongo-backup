@@ -69,13 +69,19 @@ mbk backup <path to conf.json>
 mbk backup <path to conf.json> --cron='* * * * * *'
 ```
 
+##### Debugging
+```
+mbk backup <path to conf.json> --debug
+```
+
 #### Contribution
 This is a fairly new tool, so any contribution are welcomed.
 What should we focus?
 * FTP/SFTP support
-* Testing
+* ~~Testing~~
 * Amazon EFS
 * Dropbox like support
+* ~~Debugging~~
 
 
 #### My boss wants a license. So where is it?
