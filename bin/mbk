@@ -8,19 +8,20 @@ var pkg = require('../package.json');
 updateNotifier({pkg: pkg}).notify();
 
 program
-	.version(pkg.version)
-	//.usage('[command] [options]')
-	.description("Backup your mongoDB to S3 or file System with 'backup' command. For example configuration file use 'example'.");
+    .version(pkg.version)
+    //.usage('[command] [options]')
+    .description("Backup your mongoDB to S3 or file System with 'backup' command. For example configuration file use 'example'.");
 
 program
-	.command('example <path>')
-	.description('Create an example configuration file on <path>')
-	.action(mbk.example);
+    .command('example <path>')
+    .description('Create an example configuration file on <path>')
+    .action(mbk.example);
 
 program
-	.command('backup <config>')
-	.description('Run backup from config file')
-	.option('-c, --cron <mode>', "Use cron timer [--cron='* * * * * *']")
-	.action(mbk.run);
+    .command('backup <config>')
+    .description('Run backup from config file')
+    .option('-c, --cron <mode>', "Use cron timer [--cron='* * * * * *']")
+    .option('-d, --debug', "For debug purpose", false)
+    .action(mbk.run);
 
 program.parse(process.argv);

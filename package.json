@@ -10,7 +10,7 @@
   "homepage": "https://github.com/brendtumi/mongo-backup#readme",
   "main": "./lib/mongo-backup",
   "scripts": {
-    "test": "./bin/mbk backup ./test/conf.json"
+    "test": "./bin/mbk backup ./test/conf.json --debug=true"
   },
   "repository": {
     "type": "git",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "async": "^2.1.4",
-    "aws-sdk": "^2.7.20",
+    "aws-sdk": "^2.7.21",
     "chalk": "^1.1.3",
     "commander": "^2.9.0",
     "cron": "^1.2.1",

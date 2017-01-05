@@ -38,9 +38,9 @@
       "resolved": "https://registry.npmjs.org/asynckit/-/asynckit-0.4.0.tgz"
     },
     "aws-sdk": {
-      "version": "2.7.20",
-      "from": "aws-sdk@2.7.20",
-      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.7.20.tgz"
+      "version": "2.7.21",
+      "from": "aws-sdk@2.7.21",
+      "resolved": "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.7.21.tgz"
     },
     "aws-sign2": {
       "version": "0.6.0",
