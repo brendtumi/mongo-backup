@@ -69,6 +69,12 @@ mbk backup <path to conf.json>
 mbk backup <path to conf.json> --cron='* * * * * *'
 ```
 
+##### Changing temporary directory
+Temporary directory should be exist and must have appropriate write permissions. 
+```
+mbk backup <path to conf.json> --tmp='/absolute/and/existing/directory'
+```
+
 ##### Debugging
 ```
 mbk backup <path to conf.json> --debug
@@ -82,6 +88,7 @@ What should we focus?
 * Amazon EFS
 * Dropbox like support
 * ~~Debugging~~
+* ~~Temporary dir option~~
 
 
 #### My boss wants a license. So where is it?
