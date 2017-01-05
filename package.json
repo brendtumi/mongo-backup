@@ -1,6 +1,6 @@
 {
   "name": "mongodbbackup",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Cli for Automated MongoDB backup",
   "author": "Tumay Ceber <tumayceber@gmail.com>",
   "license": "MIT",
