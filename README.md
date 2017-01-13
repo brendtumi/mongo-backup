@@ -68,6 +68,12 @@ mbk backup <path to conf.json>
 ```
 mbk backup <path to conf.json> --cron='* * * * * *'
 ```
+But I need to close terminal window. How can I run without cancelling backup script?
+Well use [*nohup*](https://en.wikipedia.org/wiki/Nohup) or use default job scheduler (crontab etc.)
+```bash
+nohup mbk backup /home/ubuntu/backup.json --cron='* 5 * * * *' > /home/ubuntu/backuplog.out 2> /home/ubuntu/backuplog.err < /dev/null &
+```
+
 
 ##### Changing temporary directory
 Temporary directory should be exist and must have appropriate write permissions. 

@@ -74,9 +74,9 @@
       "resolved": "https://registry.npmjs.org/boxen/-/boxen-0.6.0.tgz"
     },
     "bson": {
-      "version": "1.0.3",
-      "from": "bson@>=1.0.3 <1.1.0",
-      "resolved": "https://registry.npmjs.org/bson/-/bson-1.0.3.tgz"
+      "version": "1.0.4",
+      "from": "bson@>=1.0.4 <1.1.0",
+      "resolved": "https://registry.npmjs.org/bson/-/bson-1.0.4.tgz"
     },
     "buffer": {
       "version": "4.9.1",
@@ -568,14 +568,14 @@
       "resolved": "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.11.tgz"
     },
     "mongodb": {
-      "version": "2.2.19",
-      "from": "mongodb@2.2.19",
-      "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-2.2.19.tgz"
+      "version": "2.2.20",
+      "from": "mongodb@2.2.20",
+      "resolved": "https://registry.npmjs.org/mongodb/-/mongodb-2.2.20.tgz"
     },
     "mongodb-core": {
-      "version": "2.1.4",
-      "from": "mongodb-core@2.1.4",
-      "resolved": "https://registry.npmjs.org/mongodb-core/-/mongodb-core-2.1.4.tgz"
+      "version": "2.1.5",
+      "from": "mongodb-core@2.1.5",
+      "resolved": "https://registry.npmjs.org/mongodb-core/-/mongodb-core-2.1.5.tgz"
     },
     "node-alias": {
       "version": "1.0.4",
