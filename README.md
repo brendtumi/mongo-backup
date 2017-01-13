@@ -105,7 +105,3 @@ What should we focus?
 [npm-image]: https://img.shields.io/npm/v/mongodbbackup.svg
 [dependency-url]: https://david-dm.org/brendtumi/mongo-backup
 [npm-url]: https://npmjs.org/package/mongodbbackup
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/brendtumi/mongo-backup/badge.svg?style=beer-square)](https://beerpay.io/brendtumi/mongo-backup)  [![Beerpay](https://beerpay.io/brendtumi/mongo-backup/make-wish.svg?style=flat-square)](https://beerpay.io/brendtumi/mongo-backup?focus=wish)
