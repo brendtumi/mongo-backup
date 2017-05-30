@@ -96,7 +96,7 @@ What should we focus?
 
 ### Contributors
 We welcome contributions of all kinds from anyone. 
-* Author: [Tümay Çeber](https://github.com/brendtumi) [![](https://img.shields.io/gratipay/user/brendtumi.svg)]()
+* Author: [Tümay Çeber](https://github.com/brendtumi) [![](https://img.shields.io/gratipay/user/brendtumi.svg)](https://gratipay.com/brendtumi/)
 
 #### My boss wants a license. So where is it?
 [MIT License](./LICENSE)
