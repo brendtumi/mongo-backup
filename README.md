@@ -9,7 +9,6 @@ Install with [npm](http://github.com/isaacs/npm):
 npm install mongodbbackup -g
 ```
     
-    
 ### Configuration
 Example configuration file [examples/conf.json](examples/conf.json)
 
@@ -73,7 +72,6 @@ Well use [*nohup*](https://en.wikipedia.org/wiki/Nohup) or use default job sched
 ```bash
 nohup mbk backup /home/ubuntu/backup.json --cron='* 5 * * * *' > /home/ubuntu/backuplog.out 2> /home/ubuntu/backuplog.err < /dev/null &
 ```
-
 
 ##### Changing temporary directory
 Temporary directory should be exist and must have appropriate write permissions. 
