@@ -1,6 +1,6 @@
 {
   "name": "mongodbbackup",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "dependencies": {
     "addressparser": {
       "version": "1.0.1",
