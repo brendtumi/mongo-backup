@@ -96,12 +96,15 @@ What should we focus?
 * ~~Debugging~~
 * ~~Temporary dir option~~
 
+### Contributors
+We welcome contributions of all kinds from anyone. 
+* Author: [Tümay Çeber](https://github.com/brendtumi) [![](https://img.shields.io/gratipay/user/brendtumi.svg)]()
 
 #### My boss wants a license. So where is it?
 [MIT License](./LICENSE)
 
-[dependency-image]: https://david-dm.org/brendtumi/mongo-backup.svg
-[downloads-image]: http://img.shields.io/npm/dm/mongodbbackup.svg
-[npm-image]: https://img.shields.io/npm/v/mongodbbackup.svg
+[dependency-image]: https://david-dm.org/brendtumi/mongo-backup.svg?style=flat-square
+[downloads-image]: http://img.shields.io/npm/dm/mongodbbackup.svg?style=flat-square
+[npm-image]: https://img.shields.io/npm/v/mongodbbackup.svg?style=flat-square
 [dependency-url]: https://david-dm.org/brendtumi/mongo-backup
 [npm-url]: https://npmjs.org/package/mongodbbackup
