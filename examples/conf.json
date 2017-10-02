@@ -16,7 +16,8 @@
       "secretAccessKey": "XXXX5n4a6Us2x9z6kCGZ0GH7pvzZTDM0KdwjXXXX",
       "region": "eu-central-1",
       "bucket": "backups",
-      "folder": ""
+      "folder": "",
+      "name": ""
     },
     "hooks": {
       "before": [
