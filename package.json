@@ -1,13 +1,13 @@
 {
-  "name": "mongodbbackup",
-  "version": "1.2.4",
+  "name": "@settlin/mongo-backup",
+  "version": "2.0.0",
   "description": "Cli for Automated MongoDB backup",
-  "author": "Tumay Ceber <tumayceber@gmail.com>",
+  "author": "Settlin <developers@settlin.in>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brendtumi/mongo-backup/issues"
+    "url": "https://github.com/settlin/mongo-backup/issues"
   },
-  "homepage": "https://github.com/brendtumi/mongo-backup#readme",
+  "homepage": "https://github.com/settlin/mongo-backup#readme",
   "main": "./lib/mongo-backup",
   "scripts": {
     "test": "./bin/mbk backup ./test/conf.json --debug=true",
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brendtumi/mongo-backup.git"
+    "url": "git+https://github.com/settlin/mongo-backup.git"
   },
   "keywords": [
     "mongodb",
