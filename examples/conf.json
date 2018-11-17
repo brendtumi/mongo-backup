@@ -8,7 +8,9 @@
       "database": "backup-test",
       "username": "backup-test-user",
       "password": "backup-test-password",
-      "archive": "gzip"
+      "archive": "gzip",
+      "excludeCollection": ["abc", "def"],
+      "dateFormat": "YYYY-MM-DD"
     },
     "to": {
       "type": "s3",
