@@ -1,4 +1,4 @@
-# MongoDb Backup cli
+# MongoDb Backup
 
 Cli for Automated MongoDB backup. Supports AWS S3 backups, Dropbox backups, Email/HTTP notifications, pre/post hooks and internal crontab.
 
@@ -107,9 +107,9 @@ This is a fairly new tool, so any contribution are welcomed.
 What should we focus?
 
 - FTP/SFTP support
-- ~~Testing~~
+- Testing
 - Amazon EFS
-- Dropbox like support
+- ~~Dropbox like support~~
 - ~~Debugging~~
 - ~~Temporary dir option~~
 
