@@ -21,7 +21,7 @@ program
     .command('backup <config>')
     .description('Run backup from config file')
     .option('-c, --cron <mode>', "Use cron timer [--cron='* * * * * *']")
-    .option('-t, --tmp <mode>', "Use another tmp folder insted of system tmp directory")
+    .option('-t, --tmp <mode>', "Use another tmp folder instead of system tmp directory")
     .option('-d, --debug', "For debug purpose", false)
     .action(mbk.run);
 

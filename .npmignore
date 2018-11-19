@@ -1,0 +1,11 @@
+examples
+test
+.travis.yml
+.github
+.prettierignore
+.eslintrc.json
+.vscode
+**/*.spec.*
+coverage
+.nyc_output
+*.log
