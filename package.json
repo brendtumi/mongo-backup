@@ -10,7 +10,7 @@
   "homepage": "https://github.com/brendtumi/mongo-backup#readme",
   "main": "./lib/index.js",
   "scripts": {
-    "format": "prettier --write '**/*.{js,css,md}'",
+    "format": "prettier --write '**/*.{js,md}'",
     "lint": "eslint **/*.js --fix",
     "test": "./bin/mbk backup ./test/conf.json --debug=true",
     "postversion": "git push && git push --tags"
@@ -67,6 +67,18 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "npm run format",
+      "npm run lint",
+      "git add"
+    ]
   },
   "devDependencies": {
     "cz-conventional-changelog": "^2.1.0",
