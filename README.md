@@ -1,12 +1,13 @@
 # MongoDb Backup cli
-Cli for Automated MongoDB backup. Supports AWS S3 backups, Email/HTTP notifications, pre/post hooks and internal crontab.
+Cli for Automated MongoDB backup. Supports AWS S3 backups, Dropbox backups, Email/HTTP notifications, pre/post hooks and internal crontab.
+Forked from https://github.com/brendtumi/mongo-backup
  
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Dependency Status][dependency-image]][dependency-url]
 
 ### Installation
 Install with [npm](http://github.com/isaacs/npm):
 ```
-npm install mongodbbackup -g
+npm install @settlin/mongo-backup -g
 ```
     
 ### Configuration
@@ -26,6 +27,9 @@ Use any command in [mongodump](https://docs.mongodb.com/manual/reference/program
 *will use `tar -zcvf` command to compress backup files*
 * `zip`
 *will use `zip -zcvf` command to compress backup files but `sudo apt-get install zip` should be installed* 
+
+For example:
+`excludeCollection: 'test'` will add `--excludeCollection test` to mongodump command.
 
 **email notification** 
 Look at [nodemailer](https://www.npmjs.com/package/nodemailer) for email notification support.

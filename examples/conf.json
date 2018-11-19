@@ -8,7 +8,9 @@
       "database": "backup-test",
       "username": "backup-test-user",
       "password": "backup-test-password",
-      "archive": "gzip"
+      "archive": "gzip",
+      "excludeCollection": ["abc", "def"],
+      "dateFormat": "YYYY-MM-DD"
     },
     "to": {
       "type": "s3",
@@ -16,7 +18,8 @@
       "secretAccessKey": "XXXX5n4a6Us2x9z6kCGZ0GH7pvzZTDM0KdwjXXXX",
       "region": "eu-central-1",
       "bucket": "backups",
-      "folder": ""
+      "folder": "",
+      "name": ""
     },
     "hooks": {
       "before": [
