@@ -1,41 +1,47 @@
 # MongoDb Backup cli
+
 Cli for Automated MongoDB backup. Supports AWS S3 backups, Dropbox backups, Email/HTTP notifications, pre/post hooks and internal crontab.
-Forked from https://github.com/brendtumi/mongo-backup
- 
+
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Dependency Status][dependency-image]][dependency-url]
 
 ### Installation
+
 Install with [npm](http://github.com/isaacs/npm):
+
 ```
-npm install @settlin/mongo-backup -g
+npm install mongodbbackup -g
 ```
-    
+
 ### Configuration
+
 Example configuration file [examples/conf.json](examples/conf.json)
 
-Create configuration file using 
+Create configuration file using
+
 ```
 mbk example <path for conf.json>
 ```
 
 Use any command in [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) with same name (without '--')
 
-**`archive` options** 
-* `gzip`
-*this will automagically add --gzip and --archive arguments for compressing backup file*
-* `tar` (default)
-*will use `tar -zcvf` command to compress backup files*
-* `zip`
-*will use `zip -zcvf` command to compress backup files but `sudo apt-get install zip` should be installed* 
+**`archive` options**
+
+- `gzip`
+  _this will automagically add --gzip and --archive arguments for compressing backup file_
+- `tar` (default)
+  _will use `tar -zcvf` command to compress backup files_
+- `zip`
+  _will use `zip -zcvf` command to compress backup files but `sudo apt-get install zip` should be installed_
 
 For example:
 `excludeCollection: 'test'` will add `--excludeCollection test` to mongodump command.
 
-**email notification** 
+**email notification**
 Look at [nodemailer](https://www.npmjs.com/package/nodemailer) for email notification support.
 `%s` in email body will be replaced with backup result.
 
 Sample backup result:
+
 ```javasript
 {
     part: 'mongodb 127.0.0.1',
@@ -60,49 +66,62 @@ Sample backup result:
 }
 ```
 
-
 ### Running
+
 Need help? use `--help` argument
+
 ```
 mbk backup <path to conf.json>
 ```
 
 ##### Crontab
+
 ```
 mbk backup <path to conf.json> --cron='* * * * * *'
 ```
+
 But I need to close terminal window. How can I run without cancelling backup script?
-Well use [*nohup*](https://en.wikipedia.org/wiki/Nohup) or use default job scheduler (crontab etc.)
+Well use [_nohup_](https://en.wikipedia.org/wiki/Nohup) or use default job scheduler (crontab etc.)
+
 ```bash
 nohup mbk backup /home/ubuntu/backup.json --cron='* 5 * * * *' > /home/ubuntu/backuplog.out 2> /home/ubuntu/backuplog.err < /dev/null &
 ```
 
 ##### Changing temporary directory
-Temporary directory should be exist and must have appropriate write permissions. 
+
+Temporary directory should be exist and must have appropriate write permissions.
+
 ```
 mbk backup <path to conf.json> --tmp='/absolute/and/existing/directory'
 ```
 
 ##### Debugging
+
 ```
 mbk backup <path to conf.json> --debug
 ```
 
 #### Contribution
+
 This is a fairly new tool, so any contribution are welcomed.
 What should we focus?
-* FTP/SFTP support
-* ~~Testing~~
-* Amazon EFS
-* Dropbox like support
-* ~~Debugging~~
-* ~~Temporary dir option~~
+
+- FTP/SFTP support
+- ~~Testing~~
+- Amazon EFS
+- Dropbox like support
+- ~~Debugging~~
+- ~~Temporary dir option~~
 
 ### Contributors
-We welcome contributions of all kinds from anyone. 
-* Author: [Tümay Çeber](https://github.com/brendtumi) [![](https://img.shields.io/gratipay/user/brendtumi.svg)](https://gratipay.com/brendtumi/)
+
+We welcome contributions of all kinds from anyone.
+
+- Author: [Tümay Çeber](https://github.com/brendtumi)
+- Dropbox Support: Settlin <developers@settlin.in>
 
 #### My boss wants a license. So where is it?
+
 [MIT License](./LICENSE)
 
 [dependency-image]: https://david-dm.org/brendtumi/mongo-backup.svg?style=flat-square
