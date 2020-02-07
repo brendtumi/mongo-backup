@@ -50,7 +50,7 @@
     "progress": "^1.1.8",
     "request": "^2.88.0",
     "tmp": "0.0.31",
-    "update-notifier": "^1.0.3"
+    "update-notifier": "^4.0.0"
   },
   "files": [
     "bin",
