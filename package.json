@@ -43,7 +43,7 @@
     "dropbox": "^2.5.10",
     "graceful-fs": "^4.1.11",
     "jsonfile": "^2.4.0",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "mongodb": "^2.2.31",
     "node-alias": "^1.0.4",
     "nodemailer": "^2.7.2",
