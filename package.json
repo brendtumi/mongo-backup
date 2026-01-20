@@ -46,9 +46,9 @@
     "moment": "^2.22.2",
     "mongodb": "^2.2.31",
     "node-alias": "^1.0.4",
-    "nodemailer": "^2.7.2",
+    "nodemailer": "^6.9.9",
     "progress": "^1.1.8",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "tmp": "0.0.31",
     "update-notifier": "^1.0.3"
   },
